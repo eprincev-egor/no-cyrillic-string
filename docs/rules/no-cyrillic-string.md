@@ -6,8 +6,6 @@ For stop it, use it rule for detect hardcoded cyrillic text
 
 ## Rule Details
 
-This rule aims to...
-
 Examples of **incorrect** code for this rule:
 
 ```js

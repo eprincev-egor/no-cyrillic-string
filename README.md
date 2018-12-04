@@ -11,18 +11,20 @@ $ npm install eslint eslint-plugin-no-cyrillic-string --save-dev
 
 ## Usage
 
-Create an `.eslint.yml` file with the following:
+Create an `.eslint.json` file with the following:
 
-```yaml
-plugins:
-  - no-cyrillic-string
+```json
+  "plugins": [
+      "eslint-plugin-no-cyrillic-string"
+  ]
 ```
 
-Then, you can add the custom rules to the `.eslint.yml` file:
+Then, you can add the custom rules to the `.eslint.json` file:
 
-```yaml
-rules:
-  - no-cyrillic-string: error
+```json
+  "rules": {
+      "no-cyrillic-string/no-cyrillic-string": "error"
+  }
 ```
 
 To lint your project with ESLint, add the following `script` to your `package.json`:

@@ -13,7 +13,8 @@
         "semi": ["error", "always"],
         "space-infix-ops": ["error"],
         "no-lonely-if": ["error"],
-        "curly": [2, "multi-line"]
+        "curly": [2, "multi-line"],
+        "no-cyrillic-string/no-cyrillic-string": "error"
     },
     "parserOptions": {
         "ecmaVersion": 8,
@@ -24,5 +25,8 @@
     },
     "globals": {
         "Promise": true
-    }
+    },
+    "plugins": [
+        "eslint-plugin-no-cyrillic-string"
+    ]
 }
