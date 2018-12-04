@@ -12,6 +12,10 @@
     "test": "mocha ./tests/**/*.js",
     "lint": "eslint ./**/*.js"
   },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/eprincev-egor/no-cyrillic-string.git"
+  },
   "keywords": [
     "plugin",
     "eslint",
