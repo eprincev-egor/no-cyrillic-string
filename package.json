@@ -1,6 +1,6 @@
 {
-  "name": "eslint-rule-no-cyrillic-string",
-  "version": "1.0.0",
+  "name": "eslint-plugin-no-cyrillic-string",
+  "version": "1.0.1",
   "description": "Disable cyrillic text in string literals",
   "main": "index.js",
   "directories": {
