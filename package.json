@@ -1,0 +1,29 @@
+{
+  "name": "eslint-rule-no-cyrillic-string",
+  "version": "1.0.0",
+  "description": "Disable cyrillic text in string literals",
+  "main": "index.js",
+  "directories": {
+    "doc": "docs",
+    "lib": "lib",
+    "test": "tests"
+  },
+  "scripts": {
+    "test": "mocha ./tests/**/*.js",
+    "lint": "eslint ./**/*.js"
+  },
+  "keywords": [
+    "plugin",
+    "eslint",
+    "lint",
+    "string",
+    "cyrillic",
+    "error"
+  ],
+  "author": "Eprincev Egor",
+  "license": "ISC",
+  "devDependencies": {
+    "eslint": "^5.9.0",
+    "mocha": "^5.2.0"
+  }
+}

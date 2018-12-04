@@ -1,0 +1,28 @@
+{
+    "extends": "eslint:recommended",
+    "rules": {
+        "comma-dangle": ["error", "never"],
+        "indent": ["error", 4, { "SwitchCase": 1 }],
+        "no-case-declarations": "off",
+        "no-console": "off",
+        "no-extra-boolean-cast": "off",
+        "no-var": "error",
+        "object-shorthand": ["error", "always"],
+        "one-var": ["error", "never"],
+        "quotes": ["error", "double"],
+        "semi": ["error", "always"],
+        "space-infix-ops": ["error"],
+        "no-lonely-if": ["error"],
+        "curly": [2, "multi-line"]
+    },
+    "parserOptions": {
+        "ecmaVersion": 8,
+        "sourceType": "module"
+    },
+    "env": {
+        "node": true
+    },
+    "globals": {
+        "Promise": true
+    }
+}
