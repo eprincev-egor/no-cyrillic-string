@@ -18,7 +18,10 @@
     },
     "parserOptions": {
         "ecmaVersion": 8,
-        "sourceType": "module"
+        "sourceType": "module",
+        "ecmaFeatures": {
+            "jsx": true
+        }
     },
     "env": {
         "node": true
@@ -27,6 +30,7 @@
         "Promise": true
     },
     "plugins": [
-        "eslint-plugin-no-cyrillic-string"
+        "eslint-plugin-no-cyrillic-string",
+        "react"
     ]
 }

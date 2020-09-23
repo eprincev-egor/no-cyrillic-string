@@ -83,6 +83,20 @@ ruleTester.run("no-cyrillic-string", rule, {
                 message: errorText,
                 type: "TemplateElement"
             }]
+        },
+        // https://github.com/eprincev-egor/no-cyrillic-string/issues/1
+        {
+            code: "<div>русский текст</div>",
+            parserOptions: {
+                ecmaVersion: 6,
+                "ecmaFeatures": {
+                    "jsx": true
+                }
+            },
+            errors: [{
+                message: errorText,
+                type: "JSXText"
+            }]
         }
     ]
     // just all alphabet
