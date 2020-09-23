@@ -123,6 +123,19 @@ ruleTester.run("no-cyrillic-string", rule, {
                 message: errorText,
                 type: "JSXText"
             }]
+        },
+        {
+            code: "<input placeholder='текст'/>",
+            parserOptions: {
+                ecmaVersion: 6,
+                "ecmaFeatures": {
+                    "jsx": true
+                }
+            },
+            errors: [{
+                message: errorText,
+                type: "Literal"
+            }]
         }
     ]
     // just all alphabet
